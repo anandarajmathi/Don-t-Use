@@ -1,0 +1,102 @@
+Objects in JavaScript 
+              *********************    
+
+
+A.)Browser Detection Methods
+----------------------------
+
+1.)navigator.appCodeName
+2.)navigator.appName
+3.)navigator.appVersion
+4.)navigator.platform
+5.)navigator.language
+6.)navigator.userAgent
+7.)navigator.systemlanguage
+8.)navigator.cookieEnabled
+9.)navigator.userlanguage
+10.)navigator.plugin
+11.)navigator.mimeType
+
+============================================================================================================
+
+B.)String Object 
+-----------------
+
+1.)str.toUpperCase();
+2.)str.toLowerCase();
+3.)str.charAt();
+4.)str.charCodeAt();
+5.)String.fromCharCode();
+6.)str.concat(str1,str2);
+7.)str.indexOf();
+8.)str.lastIndexOf();
+9.)str.match();
+10.)str.replace("oldname","newname");
+11.)str.search("searchvalue");
+12.)str.slice(st,end);
+13.)str.substr(st,length);
+14.)str.length
+15.)str.split()
+16.)str.valueOf()
+
+============================================================================================================
+
+C)Array Object
+--------------
+
+i)Array Syntax:
+---------------
+
+There 3 way using to create a array in javascript
+
+1. var arrname = new Array();
+   arrname[index]="value"; value is either string or integer
+
+2. var arrname = new Array("value1",.....,"valuen");
+
+3. var arrname = ["value1",...............,"valuen"];
+
+ii)Array Methods:
+-----------------
+
+1.)arrname.push("value");
+2.)arrname.pop();
+3.)arrname.concat(arrname1);
+4.)arrname.join(":" or "and"); -> join defacluts take the comma(,)
+5.)arrname.reverse();
+6.)arrname.sort();
+7.)arrname.slice(strvalue,endvalue);
+8.)arrname.splice(index,howanyvalue,elem1,elem2,...); -> It is used Added or Remove the array value in list.
+9.)arrname.toString();
+10.)arrname.length;
+11.)arrname.shift(); -> Remove the array value in begining
+12.arrname.unshift(); -> Add the array value in begining
+13.)arrnamr.valueOf();
+
+============================================================================================================
+
+D.)Math Object
+---------------
+
+1.)Math.PI;
+2.)Math.sqrt(value);
+3.)Math.pow(value1,value2);
+4.)Math.abs(value);
+5.)Math.acos(value in radius);
+6.)Math.asin(value in radius);
+7.)Math.atan(value in radius);
+8.)Math.atan2(yvalue,xvalue);
+9.)Math.cos(value in degree);
+10.)Math.sin(value in degree);
+11.)Math.tan(value in degree);
+12.Math.min(value1,valu2,...valuen);
+13.)Math.max(value1,valu2,...valuen);
+14.)Math.ceil(value);
+15.)Math.floor(value);
+16.)Math.round(value);
+17.)Math.random(value);
+18.)Math.log(value);
+19.)Math.exp(value);
+
+
+============================================================================================================

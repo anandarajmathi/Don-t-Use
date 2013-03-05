@@ -1,0 +1,43 @@
+<html>
+ <head>
+ <script type="text/javascript">
+   function fun()
+   {
+       var str = document.getElementById("ti1").value;
+       if(str == "")
+       {
+          alert("Plz enter the input !!!!!")
+		  return false;      
+       }
+	   for(var i=0;i<str.length;i++)
+	   {
+	      var k= str.charCodeAt(i);
+ 	      if(!((k>64 && k<91) || (k>96 && k<123) ||(k>47 && k<58) || (k == 95)))
+	      {
+		    alert("Plz enter the valid input !!!!!")
+		    return false;
+          }
+        }
+	    return true;
+    }
+ </script>
+ </head>
+ <body>
+  <br /><br /><br />
+  <form  name="fname" onsubmit="return fun()">
+     <table frame="box" width="28%" height="30%" align="center" cellpadding="2">
+     <caption> Form validation</caption>
+       <tr>
+         <td align="right"> Input:</td>
+         <td> <input type="text" name="t1" id="ti1" onselect="alert('Are you change your input !!')"
+          title=" plz Enter input " maxlength="25" size="25" /></td>
+       </tr>
+       <tr>
+       <td colspan="2" align="center"><input type="submit" value="Submit"/> <input type="reset" 
+       value="Reset"/></td>
+       </tr>
+     </table>
+  </form>
+ </body>
+</html>
+

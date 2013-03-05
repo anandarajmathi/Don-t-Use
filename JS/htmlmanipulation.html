@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title></title>
+	  <script type = "text/javascript" >
+	  	
+		function addContact()
+		{
+		  		 
+			var table = document.getElementById('contacts');
+
+			var tr    = document.createElement('tr');
+			var td01   = document.createElement('TD');
+			td01.innerHTML = "Name " ;
+			td01.align="right"
+			var td02   = document.createElement('TD');
+			td02.innerHTML = "Address"
+			td02.align="right"
+			var inp01  = document.createElement('INPUT');
+			var inp02  = document.createElement('INPUT');
+		
+			
+			var tr1    = document.createElement('TR');
+			var td11   = document.createElement('TD');
+			td11.innerHTML = " Mail ID "
+			var td12   = document.createElement('TD');
+			td12.innerHTML = "Mobile No "
+			var inp11  = document.createElement('INPUT');
+			var inp12  = document.createElement('INPUT');
+		
+            var tr2    = document.createElement('TR');
+			var td21   = document.createElement('TD');
+			td21.innerHTML = "<hr>"
+			var td22   = document.createElement('TD');
+			td22.innerHTML = "<hr>"
+			
+			var tr3    = document.createElement('TR');
+			var td31   = document.createElement('TD');
+			td31.innerHTML = "<br>"
+			
+			table.appendChild(tr);
+			tr.appendChild(td01);
+			tr.appendChild(td02);
+			td01.appendChild(inp01);
+			td02.appendChild(inp02);
+		
+			table.appendChild(tr1);
+			tr1.appendChild(td11);
+			tr1.appendChild(td12);
+			td11.appendChild(inp11);
+			td12.appendChild(inp12);
+			
+			table.appendChild(tr2);
+			tr2.appendChild(td21);
+			tr2.appendChild(td22);
+			
+			table.appendChild(tr3);
+			tr3.appendChild(td31);
+			
+		}
+		
+	  
+	  </script>
+	</head>
+    <body>
+      	<br /><br />
+		<table align="center" >
+   		<tbody id="contacts">
+      		<tr>
+         		<td colspan="2" align="center"><a href="javascript:addContact()">Add a Contact</a> 
+      		</tr>
+      		
+      		</tbody>
+		</table>  
+	  
+    </body>
+</html>

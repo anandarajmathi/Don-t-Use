@@ -1,0 +1,16 @@
+<html>
+<head>
+<script style="type/javascript">
+
+str ="<root> <training type>ajax training< /training type> <name> Raj</name></root>"; 
+tagname = "name";
+
+etag = "< *"+tagname+" *>";
+var pat =new RegExp("[^<]+(?="+etag+")","gi");
+
+alert(str.match(pat));
+
+</script>
+</head>
+</body>
+</html>

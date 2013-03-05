@@ -1,0 +1,37 @@
+<html>
+<fieldset>
+   <title>Javascript Debugging</title>
+   <head>
+<script type="text/javascript" src="debug.js"></script>
+</head>
+   <body>
+<form name="using_firebug">
+    <h2>Javascript Debugging</h2>
+    <input type="button" name="debug_me" value="Debug" onClick="startDebugging();">
+    <div id="welcome" style="display:none">
+    <ul>
+        <li>Find scripts easily</li>
+        <li>Search for text or line number</li>
+        <li>Pause execution on any line</li>
+        <li>Pause execution, if...</li>
+        <li>One step at a time</li>
+        <li>I break for errors</li>
+        <li>Stack traces unstacked</li>
+        <li>Watch expressions</li>
+        <li>Variable tooltips</li>
+    </ul>
+    </div><br/>
+
+Name : <input type="text" name="who" value="">
+How are you? Excellent<input type="radio" name="hru" value="excellent">
+Good<input type="radio" name="hru" value="good">
+Dont know<input type="radio" name="hru" value="confused"><br/>
+    <input type="button" name="pasue_exec" value="Pause" onClick="pauseOnBreakpoint();">
+    <span id="pause">Set the break point to pause the execution</span><br/>
+
+    <input type="button" name="stepping" value="Stepping" onClick="pauseOnBreakpoint();">
+
+</form>
+   </body>
+</fieldset>
+</html>

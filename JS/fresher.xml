@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<fresher>
+	<trainee>
+		<name>Anandaraj</name>
+		<qual>B.Tech</qual>
+	</trainee>
+	<trainee>
+		<name>Raja</name>
+		<qual>BE</qual>
+	</trainee>
+</fresher>

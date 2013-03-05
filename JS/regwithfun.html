@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title></title>
+	</head>
+    <body>
+      
+      <script type = "text/javascript">
+	  function html2entities(sometext)
+	  {
+		 var re=/[(<>"'&]/g
+ 		 arguments[i].value=sometext.replace(re, function(m){return replacechar(m)})
+	  }
+
+      function replacechar(match)
+      {
+ 		if (match=="<")
+  			return "&lt;"
+ 		else if (match==">")
+  			return "&gt;"
+ 		else if (match=="\"")
+  				return "&quot;"
+		else if (match=="'")
+ 				 return "&#039;"
+ 		else if (match=="&")
+ 		 return "&amp;"
+		}
+         //replace "<", ">", "&" and quotes in a form field with corresponding HTML entity instead
+		html2entities("<") 
+	  
+	  </script>
+      
+    </body>
+</html>

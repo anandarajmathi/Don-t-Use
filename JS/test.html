@@ -1,0 +1,67 @@
+<html>
+	<head>
+	<title></title>
+	<script type = "text/javascript">
+	{
+	  function mainfun()
+     {
+     uname1 = document.getElementById("ti1").value;
+
+     if (uname1 =="")
+     {
+       alert("Plz Enter input !!");
+       valid =  false;
+     }
+     else if(uname1 != "")
+     {
+	   
+           
+       llname = uname1.length; 
+       for(i = 0; i<llname; i++)
+       {    
+         if((i==uname1.indexOf("@"))||(i==uname1.indexOf(".")) ||(i==uname1.indexOf(","))||
+            (i==uname1.indexOf("'"))||(i==uname1.indexOf(";")) ||(i==uname1.indexOf("*"))|| 
+         	(i==uname1.indexOf('"'))||(i==uname1.indexOf(" ")) ||(i==uname1.indexOf("`"))||
+         	(i==uname1.indexOf("~"))||(i==uname1.indexOf("(")) ||(i==uname1.indexOf(")")))    
+         {
+           alert("Plz enter your correct input !!!");
+           valid =  false;
+           break;
+         }
+         if((i==uname1.indexOf("#"))||(i==uname1.indexOf("$")) ||(i==uname1.indexOf("%"))||
+            (i==uname1.indexOf("^"))||(i==uname1.indexOf("&")) ||(i==uname1.indexOf("}"))|| 
+         	(i==uname1.indexOf(']'))||(i==uname1.indexOf(" +")) ||(i==uname1.indexOf("-"))||
+         	(i==uname1.indexOf("{"))||(i==uname1.indexOf("[")) ||(i==uname1.indexOf(' ')))    
+         {
+           alert("Plz enter your correct input !!!");
+           valid =  false;
+           break;
+         }
+       }
+      
+     }
+    
+     return valid;
+   }
+      
+   	}
+	</script>
+	</head>
+<body>
+  <br /><br />
+ <form  name="fname" onsubmit="return mainfun()">
+     <table frame="box" width="30%" height="30%" align="center" cellpadding="2">
+     <CAPTION> Form validation</CAPTION>
+       <tr>
+         <td align="right"> Input:</td>
+         <td> <input type="text" name="t1" id="ti1" onselect="alert('Are you change your
+          input !!')" title=" plz Enter input " maxlength="25" size="25"onblur="mainfun()"  /></td>
+       </tr>
+       <tr>
+       <td colspan="2" align="center"><input type="submit" value="Submit"/> <input type="reset" 
+       value="Reset"/></td>
+       </tr>
+     </table>
+ </form>
+</body>
+</html>

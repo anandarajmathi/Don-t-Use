@@ -1,0 +1,42 @@
+<html>
+<head>
+<script type="text/javascript">
+function whichElement(e)
+{
+var targ;
+if (!e)
+  {
+  var e=window.event;
+  }
+if (e.target)
+  {
+  targ=e.target;
+  }
+else if (e.srcElement)
+  {
+  targ=e.srcElement;
+  }
+if (targ.nodeType==3) // defeat Safari bug
+  {
+  targ = targ.parentNode;
+  }
+var tname;
+tname=targ.tagName;
+alert("You clicked on a " + tname + " element.");
+}
+</script>
+</head>
+
+<body onmousedown="whichElement(event)">
+<p>Click somewhere in the document. An alert box will alert the tag name of the element you clicked on.</p>
+
+<h3>This is a header</h3>
+<p>This is a paragraph</p>
+<img border="2" src="/manandaraj/MyFiles/Photos/zoozoo/04.jpg" width="300" height="250" alt="Ball" align="right">
+<img src="/manandaraj/MyFiles/Photos/zoozoo/10.jpg" name="mousetest" width="299" height="250"> 
+
+<p onmousemove="document.images['mousetest']
+.src='/manandaraj/MyFiles/Photos/zoozoo/10.jpg'">When you move the mouse pointer over this paragraph, the image changes.</p>
+</body>
+
+</html>

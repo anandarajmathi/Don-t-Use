@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title></title>
+	  <script type = "text/javascript">
+	  			
+		function showHideFunc()
+		{
+  			var div = document.getElementById('top_div');
+ 			var show_but = document.getElementById('show_div');
+			var hide_but = document.getElementById('hide_div');
+  			if(div.style.display == 'block'|| div.style.display == '')
+            {
+    			div.style.display = 'none';
+    			show_but.disabled = false;
+   				hide_but.disabled = true;
+  			}
+  			else
+  			{
+    			div.style.display = 'block';
+    			show_but.disabled = true;
+    			hide_but.disabled = false;
+  			}
+  			return;
+		}
+	  		  
+	  </script>
+	</head>
+    <body>
+      <script type = "text/javascript">
+      
+  		// Creating top div
+	  		
+		var  div = document.createElement('div');
+		div.id = 'top_div';
+		div.innerHTML = 'This is added from javascript';
+		document.body.appendChild(div);
+		
+		// Creating child div
+		
+		var div2 = document.createElement('div');
+		div2.id = 'child_div';
+		div2.innerHTML = 'This is children';
+		div.appendChild(div2);
+			
+		/*** following to previous example ***/
+		// Show button initial in disabled mode
+		
+		var but1 = document.createElement('input');
+		but1.type = 'button';
+		but1.value = 'show';
+		but1.id = 'show_div';
+		but1.disabled = true;
+		
+		// Hide button initial in disabled mode
+		
+		var but2 = document.createElement('input');
+		but2.type = 'button';
+		but2.value = 'hide';
+		but2.id = 'hide_div';
+			
+			
+		document.body.appendChild(but1);
+        document.body.appendChild(but2);
+                
+        if(window.addEventListener)
+        {
+        	but1.addEventListener('click', showHideFunc, false);
+      		but2.addEventListener('click', showHideFunc, false);
+		}
+ 		else
+ 		{
+ 			but1.attachEvent('onclick', showHideFunc);
+    		but2.attachEvent('onclick', showHideFunc);
+ 		}
+
+		
+		div.style.color = '#FF0000';
+		div.style.backgroundColor = '#000000';
+		div.style.border = '1px solid #FF00FF';
+		div.style.width = '200px';
+		div.style.height = '100px';
+		div.style.textAlign = 'center';
+		div2.style.backgroundColor = '#0000FF';
+			
+      </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+	<head>
+	<title></title>
+	<script type = "text/javascript">
+	{
+	function mySubmit() {
+  // assign our form to object f
+  var f = document.forms.myForm;
+  // disable the submit button (not an actual submit button, but our button)
+  f.submitButton.disabled = true;
+  // take this out if you want
+  alert("Thank you for signing up!");
+  // submit the form
+  f.submit();
+  } 
+   	}
+	</script>
+	</head>
+<body>
+ <form  name="myForm" method="post">
+Name: <input name="myName"> <br />
+Email:  <input name="myEmail"> <br />
+<input type="hidden" name="verifySubmit" value="yes">
+<input type="button" name="submitButton" value="Submit!" onClick="javascript:mySubmit();">
+</form>
+
+</body>
+</html>

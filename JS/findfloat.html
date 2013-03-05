@@ -1,0 +1,47 @@
+<html>
+	<head>
+	<title></title>
+	<script type = "text/javascript">
+	{
+	
+	
+	 var s = 1.0;    //123456789.01
+	 str = s.toString();
+	 //alert(str.length);
+	 //alert(str);
+	 count = 0;
+	 for(i=0;i<str.length;i++)
+	 { 
+	   
+	         
+       if(isNaN(s))
+	   {
+	    alert("Plz enter number only 1 !!!");
+	            
+	   }	     
+       if(str.charAt(i)!= ".")
+       {
+        alert("Plz enter number only  2!!!"); 
+       }
+       if(str.charAt(i)==".")
+       count++;
+       
+     }
+     
+     if(count<1 || count >1)
+     {
+       alert("Plz enter only float number 3!!!!!");
+     } 
+      
+   	}
+	</script>
+	</head>
+<body>
+  <script type = "text/javascript">
+  {
+
+  }
+  </script>
+
+</body>
+</html>

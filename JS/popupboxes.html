@@ -1,0 +1,39 @@
+<html>
+<head>
+<script type="text/javascript">
+function displaymessage() //AlterBox
+{
+alert("Hello World!");
+}
+function show_confirm() //ConfirmBox
+{
+var r=confirm("Press a button");
+if (r==true)
+  {
+  alert("You pressed ok!");
+  }
+else
+  {
+  alert("You pressed cancle!");
+  }
+}
+function show_prompt() //PromptBox
+{
+var name=prompt("Please enter your name");
+if (name!=null && name!="")
+  {
+  document.write("Hello " + name + "! How are you today?");
+  }
+}
+
+</script>
+</head>
+
+<body>
+<form>
+<input type="button" value="Show Alter Box" onclick="displaymessage()" /><br><br>
+<input type="button" onclick="show_confirm()" value="Show Confirm Box" /><br><br>
+<input type="button" onclick="show_prompt()" value="Show Prompt Box" /><br>
+</form>
+</body>
+</html>

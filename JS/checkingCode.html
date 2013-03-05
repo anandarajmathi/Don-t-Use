@@ -1,0 +1,16 @@
+<html>
+     <head><title>checkingCode</title></head>
+     <body>
+          <script language="JavaScript" >
+               function checkingCode (sLevel)
+               {
+                   sHtml = "H" + sLevel;
+                   oText = this.toString();
+                   sStart = "<" + sHtml + ">";
+                   sStop = "<" + sHtml + ">";
+                   return sStart + oText + sStop + 400;
+               }
+               document.write ("This is a test"+checkingCode("TML"));
+           </script>
+      </body>
+ </html>

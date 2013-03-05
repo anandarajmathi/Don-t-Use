@@ -1,0 +1,61 @@
+<html>
+ <head>
+  <title>Arithmetic function</title>
+  <script type="text/javascript">
+  	{	
+     var m = confirm("Are you enter in Arithmetic function ");
+     if(m == true)
+     {
+     	do
+      	{
+        	var a = parseInt(prompt("Enter add(1),sub(2),mul(3) and div(4)"));
+        	switch(a)
+        	{
+         		case 1:
+          	 		alert("You entered add(1)");
+             		var b = parseFloat(prompt("Enter the 1st number"));
+             		var c = parseFloat(prompt("Enter the 2nd number"));
+             		var d = b + c ;
+             		alert("Addtion of first two number : " +d);
+             		break;
+         		case 2:
+        	 		alert("You entered sub(2)");
+             		var b = parseFloat(prompt("Enter the 1st number"));
+             		var c = parseFloat(prompt("Enter the 2nd number"));
+             		var d = b - c ;
+             		alert("Sub of first two number : " +d);
+             		break;
+         		case 3:
+        	 		alert("You entered mul(3)");
+             		var b = parseFloat(prompt("Enter the 1st number"));
+             		var c = parseFloat(prompt("Enter the 2nd number"));
+             		var d = b * c ;
+             		alert("mul of first two number : " +d);
+             		break;
+         		case 4:
+        	 		alert("You entered div(4)");
+             		var b = parseFloat(prompt("Enter the 1st number"));
+             		var c = parseFloat(prompt("Enter the 2nd number"));
+             		var d = b / c ;
+           			alert("Div of first two number : " +d);
+            		break;    
+         		default:
+           	 		alert("Only enter add(1),sub(2),mul(3)and div(4)");
+         	}
+        	x = confirm("Do you want to continue ???");
+        }while(x);
+        }
+      else
+      {
+       alert("You pressed cancle !!!");
+      }
+        
+   }
+  </script>
+ </head>
+ <body>
+  <br /><br /><br /><br />
+  <h2 align="center"> Arithmetic function End !!!!!</h2>
+ </body>
+</html>
+

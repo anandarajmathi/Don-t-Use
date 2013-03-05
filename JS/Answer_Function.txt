@@ -1,0 +1,146 @@
+Ans1.)Function:
+			function is a block of code,use for performing some action.it is related to other part of the application.
+			syntax for defining a function.
+			
+			function function_name(arguments)
+			{
+			
+				statement1;
+				statement2:
+			}
+Type's of function in javascript:1-built-in function
+								 2-user-defined function.
+
+Example:
+		<html>
+		<head>
+			<title>function()</title>
+				<script type="text/javascript">
+				function showsomething()
+				{
+					alert(Hi,i m kiran);
+				}
+				</script>
+		</head>
+				<body>
+				<script type="text/javascript">
+				showsomething();
+				</script>
+				</body>
+		</html>
+----------------------------------------------------------
+Ans2.)
+		local variables initialized with var keyword.
+		if var keyword is not with any variables that it will consider as global variables.
+		like:
+		var a=10;
+---------------------------------------------------------
+Ans3.)Object:
+				object is a special kind of data.its a collection of property and methods in javascript.				
+				objects refers to windows,document,images,tables,forms,buttons or links etc.
+				object should be named.
+---------------------------------------------------------
+Ans4.)Undefined:
+
+				The variable is 'undefined' if no value has been assigned to it.
+
+Undefined number value is NaN.
+
+Undefined string value is 'undefined'.
+
+Undefined boolean value is false.
+
+<html>
+    <script language="JavaScript">
+    var myVariable;
+
+    if(myVariable == undefined)
+    {
+      document.write("This variable is undefined at the moment");
+    }
+    else
+    {
+      document.write("This variables value is: " + myVariable);
+    }
+    </script>
+</html>
+---------------------------------------------------------------------
+Ques 8.)
+<html>
+    <head>
+        <script type="text/javascript">
+            function greetings(sText)
+            {
+                alert(sText);
+            }
+        </script>
+    </head>
+    <body>
+         <script type="text/javascript">
+             greetings('Good Morning!');
+             greetings('Good Evening!');
+         </script>
+    </body>
+ </html>
+
+Ans 8.)Good Morning!
+       Good Evening!
+---------------------------------------------------------------------	
+Ques 7.)
+<html>
+     <head><title>checkingCode</title></head>
+     <body>
+          <script language="JavaScript">
+               function checkingCode (sLevel)
+               {
+                   sHtml = "H" + sLevel;
+                   oText = this.toString();
+                   sStart = "<" + sHtml + ">";
+                   sStop = "<" + sHtml + ">";
+                   return sStart + oText + sStop + 400;
+               }
+               document.write ("This is a test"+checkingCode("TML"));
+           </script>
+      </body>
+ </html>
+ 
+Ans 7.)
+ 		This is a test[object Window]400 
+--------------------------------------------------------------------------
+Ans 5.)
+		undefined will be the default return value of a function which does not have return statement
+		but this will be the default return value  for constructor.
+-------------------------------------------------------------------------------------
+Ans 6.)
+		
+			*  The return statement is used to specify the value that is returned from the function.
+	
+     		*  Function does not have return statement means function return undefined .
+	
+	Example :
+	
+	<html>
+	<head>
+	<script type="text/javascript">
+	function myFunction()
+	{
+	//return ("Hello world!");
+	}
+	</script>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+	document.write(myFunction())
+	</script>
+
+	</body>
+	</html>
+    
+     output :
+       
+         undefined 
+
+				
+												 	 
+			

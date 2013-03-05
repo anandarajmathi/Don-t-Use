@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title></title>
+	  <script type = "text/javascript">
+	  var myw;
+	  function openw()
+	  {
+	   myw = window.open("","","width=100,heigth=1");
+	  }
+	  function closew()
+	  {
+	   if(myw)
+	   {
+	     myw.close();
+	   }
+	  }
+	  function checkw()
+	  {
+	    if(!myw)
+	    {
+	     document.getElementById("msg").innerHTML="window has never been opened !!";
+	    }
+	    else
+        {
+ 		 if (myw.closed)
+    		{ 
+    			document.getElementById("msg").innerHTML="'myWindow' has been closed!";
+    		}
+  		else
+   			 {
+   				 document.getElementById("msg").innerHTML="'myWindow' has not been closed!";
+    		}
+  			}	
+	    
+	  }
+	  </script>
+	</head>
+    <body>
+      <br /><br />
+          <input type="button" value="Open window" onclick="openw()"/>
+          <input type="button" value="Close window" onclick="closew()"/><br /><br />
+          <input type="button" value="Your window has been closed ?" onclick="checkw()"/>
+          <br /><br />
+          <div id="msg">  </div>
+    </body>
+</html>

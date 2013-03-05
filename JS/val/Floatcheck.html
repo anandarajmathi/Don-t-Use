@@ -1,0 +1,55 @@
+<html>
+	<head>
+	<title>Float values</title>
+		<script type="text/javascript">
+		/* Checking Float value
+		 * {string} i:parameter
+		 */
+		function check(i)
+		{   alert(isNaN(i));
+			if(i== "")
+			{ 
+				alert(" Pleas Enter value");
+			   	return flase;
+			}
+			if(isNaN(i))							
+			{
+				alert("please enter only numbers");
+				return false;
+			}
+			if(i.indexOf(".")== -1)
+			{
+				alert("please enter only decimal number");	
+				return false;
+			}
+			
+			alert("Entered value is : "+i);	
+				
+		}
+			
+		</script>
+	</head>
+	<body>	
+	<fieldset>
+		   <legend> Float value validation </legend>
+		   <form name="form">
+	       <table frame="box" align="center">
+				  		<thead>
+							<th colspan="2"> </th>
+				  		</thead>
+				  		<tbody>
+				  			<tr>
+								<td> Enter Number :</td>
+								<td><input type="text" name="num" size="10" maxlength="10" title="Enter the number"/></td><br />
+					       </tr>	
+						</tbody>
+				 		<tfoot>			
+				 			<tr>
+				 		<td colspan="2" align="center"><input type="submit" onclick="check(this.form.num.value)" value="Submit"/>
+				 			</tr>
+						</tfoot>
+					</table>
+					</form>
+		</fieldset>
+	</body>
+</html>

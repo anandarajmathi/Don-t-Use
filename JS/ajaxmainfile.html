@@ -1,0 +1,63 @@
+<html>
+  <head><title><dtml-var title_or_id></title>
+
+  </head>
+  <body bgcolor="#FFFFFF">
+   <div id="ajax_st"></div>
+   ajax response
+   <div id="target"></div>
+
+    <script type="text/javascript">
+       function strtoxml(xmlstring){
+         if (window.DOMParser){
+             parser = new DOMParser();
+             xmlDoc = parser.parseFromString(xmlstring,"text/xml");
+             return xmlDoc;
+         }
+	 else{
+            xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+            xmlDoc.async = false;
+            xmlDoc.loadXML(xmlstring);
+            return xmlDoc;
+	}
+       }
+
+       function resp(xmlObj){
+             /*xmlObj = strtoxml(xmlObj);
+             alert(xmlObj);
+
+             a =xmlObj.documentElement.getElementsByTagName('name')[0].firstChild.nodeValue;
+	      document.getElementById('target').innerHTML = a; 
+              js = JSON.parse(xmlObj);
+              alert(js.NAME);*/
+       }
+       function ajax(){
+         if(window.XMLHttpRequest){
+           var xmlHttp = new XMLHttpRequest();
+         }
+         else{
+           var xmlHttp = new ActiveXObject('Microsoft.XMLHTTP');
+         }
+         xmlHttp.onreadystatechange = function(){
+	    if (this.readyState == 1){
+               document.getElementById('ajax_st').innerHTML += 'Connecting..';
+	    }
+	    else if (this.readyState == 2){
+               document.getElementById('ajax_st').innerHTML += 'Request sending...';
+	    }
+	    else if (this.readyState == 3){
+               document.getElementById('ajax_st').innerHTML += 'Processing....';
+	    }
+	    else if (this.readyState == 4 && this.status==200){
+             //alert(this.responseText);
+              resp(this.responseText);
+
+	    }
+         };
+         xmlHttp.open('GET', '/response', true);
+         xmlHttp.send();
+       }
+       ajax();
+    </script>
+  </body>
+</html>

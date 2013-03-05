@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body bgcolor="black">
+
+<script type="text/javascript">
+col =parseInt("ffffff",16);
+function rami(t)
+{
+co=Math.ceil(Math.random()*col);
+t.style.color="#"+co.toString(16);
+}
+
+for(i=1 ; i<10000; i++)
+{
+document.write("<span onmouseover='rami(this)'> Happy Morning </span>");
+}
+</script>
+</body>
+</html>
+

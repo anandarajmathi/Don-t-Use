@@ -1,0 +1,41 @@
+<html>
+	<head>
+	<title></title>
+	<script type = "text/javascript">
+	{
+      function computearea()
+		{
+			var area=this.radius*this.radius*3.14
+			return area
+		}
+		//second method function
+		function computediameter()
+		{
+			var diameter=this.radius*2
+			return diameter
+		}
+	
+		function circle(r)
+		{
+			this.radius=r
+			this.area=computearea
+			this.diameter=computediameter
+		}
+	var mycircle=new circle(20)
+	//alerts 1256
+	alert("area  =  "+mycircle.area())
+	//alerts 400
+	alert("diameter = "+mycircle.diameter())
+
+   	}
+	</script>
+	</head>
+<body>
+  <script type = "text/javascript">
+  {
+
+  }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Java script</title>
+</head>
+<body>
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+
+  function Button1_onClick() {
+    document.write ("Hello " + document.NameForm.Text1.value + "<br/>")
+  }
+
+</SCRIPT>
+
+<H1>Hello in JavaScript</H1>
+<FORM NAME="NameForm" type="text/javascript">
+     Enter your name and click button: 
+    <INPUT NAME="Text1" TYPE="TEXT" SIZE="10">
+    <INPUT NAME="Button1" TYPE="BUTTON" 
+              VALUE="Hello" onClick="Button1_onClick();">
+</FORM>
+
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+  var now = new Date();
+  document.write ("Current time: " + now.getHours() + ":" + now.getMinutes())
+</SCRIPT>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <title>Example of onkeydown</title>
+    <body>
+        <form>
+            Char: <input type="text" id="char" size="15" onblur="a()"/> Keycode: <input type="text" id="keycode" size="15" />
+        </form>
+
+        <script type="text/javascript">
+            function a()
+            {
+            var charfield=document.getElementById("char").value;
+            document.getElementById("keycode").value = charfield.charCodeAt(0);
+            }
+        </script>
+
+	</body>
+</html>	

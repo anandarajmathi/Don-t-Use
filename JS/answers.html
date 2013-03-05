@@ -1,0 +1,172 @@
+JavaScript - Function in JavaScript - Session 1 (28th Sep 2011)
+---------------------------------------------------------------
+
+1. What is function?
+
+
+		A function contains code that will be executed by an event or by a call to the function.
+	
+	Syntax:
+	-------
+	
+		function functionname(var1,var2,...,varX)
+			{
+				some code;
+			}
+			
+	Example :
+	---------
+	
+	<html>
+	<head>
+	<script type="text/javascript">
+	function myFunction()
+	{
+		return ("Hello world!");  
+	}
+	</script>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+	document.write(myFunction());
+	</script>
+
+	</body>
+	</html>
+    
+     output :
+     --------
+     
+     		Hello world! 
+     		
+	note:
+	-----
+	
+		The word function must be written in lowercase letters, otherwise a JavaScript error occurs!
+		
+		
+
+
+2. How are local variables initialized?
+
+			
+			 * A variable declared within a JavaScript function becomes LOCAL and can only be accessed within that function. (the variable has local scope).
+			 * Local variables are destroyed when you exit the function.
+			 * You declare JavaScript variables with the var keyword.
+	syntax:
+	-------	 
+	 		var variablename;
+	 
+	Example:
+	--------
+			var x=5;
+					
+	
+3. What is object?
+
+	
+			* An object is just a special kind of data, with a collection of properties and methods.
+			* An object is a software bundles of variables and related methods.
+			* Objects refers to windows, documents, images, tables, forms, buttons or links, etc. Objects should be named.
+
+
+			
+
+4. What is "undefined" value?
+
+		
+		The 'undefined' value is returned from a function if no value is specified after the keyword return or if the return statement is not used.
+		
+
+5. What will be the default return value of a function which does not have return statement?
+
+			
+			* undefined
+		
+
+
+6. What is the use of return statement? What will happened if a function does not have return statement?
+
+
+			*  The return statement is used to specify the value that is returned from the function.
+	
+     		*  Function does not have return statement means function return undefined .
+	
+	Example :
+	
+	<html>
+	<head>
+	<script type="text/javascript">
+	function myFunction()
+	{
+	//return ("Hello world!");  or return  ;
+	}
+	</script>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+	document.write(myFunction())
+	</script>
+
+	</body>
+	</html>
+    
+     output :
+       
+         undefined 
+
+
+
+	
+7. Write output for below code.
+
+<html>
+     <head><title>checkingCode</title></head>
+     <body>
+          <script language="JavaScript">
+               function checkingCode (sLevel)
+               {
+                   sHtml = "H" + sLevel;
+                   oText = this.toString();
+                   sStart = "<" + sHtml + ">";
+                   sStop = "<" + sHtml + ">";
+                   return sStart + oText + sStop + 400;
+               }
+               document.write ("This is a test"+checkingCode("TML"));
+           </script>
+      </body>
+ </html>
+ 
+	 output:
+	 
+	 	This is a test[object Window]400
+	 	
+
+	 
+8. Write output for below code
+
+<html>
+    <head>
+        <script type="text/javascript">
+            function greetings(sText)
+            {
+                alert(sText);
+            }
+        </script>
+    </head>
+    <body>
+         <script type="text/javascript">
+             greetings('Good Morning!');
+             greetings('Good Evening!');
+         </script>
+    </body>
+ </html>
+
+ output:
+  
+  Good Morning!
+  Good Evening!
+ 
+

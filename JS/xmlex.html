@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title></title>
+	  <script type = "text/javascript">
+	  	Responsejsn:{"NAME":"rajesh","OCCU":"JOB"}
+		<dtml-call "REQUEST.RESPONSE.setHeader('Content-Type','application/json')">
+		Response:<h2><dtml-var title_or_id> <dtml-var document_title></h2>
+		<p>
+			This is the <dtml-var document_id> Document
+			in the <dtml-var title_and_id> Folder.
+		</p>
+	 Responsexml
+		<?xml version="1.0"?>
+		<root>
+  		<name>ajax training</name>
+		</root>
+		<dtml-call "REQUEST.RESPONSE.setHeader('Content-Type','text/xml')">
+	  
+	  </script>
+	</head>
+    <body>
+      <script type = "text/javascript">
+  
+      </script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>URL validation</title>
+	    <script type="text/javascript">
+	    /* Function for validating URL
+	     */
+	    function urlValid()
+	    {
+	      var str=document.form1.txtUrl.value;
+	      var i;
+	      var sval=str.substr(0,8);
+	      	if(sval !='https://')
+	      	{
+	       		alert(" url should start with https: ")
+	      	}
+	      var finddot=str.lastIndexOf(".");
+	      	if(str.charAt(finddot -1)==".")
+	     	{
+	       		alert("invalid for dot");
+	       	}
+			if(val+2 >= str.length)
+			{
+				alert("should be atleast 2 chars");
+			}
+	 
+		  for(i=9;i<str.length;i++)
+	 	  {
+	 	   if(str.charAt(i) =="@" || str.charAt(i) =="*" || str.charAt(i) =="&")
+	 		{
+	 		alert("special chars are not allowed with domain");
+	 		return false;
+	 		}
+	 }
+}
+</script>
+</head>
+<body>
+	<center>
+	<fieldset>
+	<legend>Url Validation</legend>
+	<form name="form1" id="form1" onSubmit="return urlValid();">
+		<table>
+			<tr>
+			<td>URL :</td>
+			<td><input type="text" id="txtUrl"  /></td>
+			</tr>
+			<tr>
+			<td colspan="2">
+		<input type="submit" value="Submit"/></td></tr>
+		</table>
+	</form>
+	</fieldset>
+	</center>
+</body>
+</html>
+	

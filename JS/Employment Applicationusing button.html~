@@ -1,0 +1,142 @@
+<html>
+	<head><title></title>
+		<script type = "text/javascript">
+			{
+
+			}
+		</script>
+	</head>
+<body>
+<h2>Employment Application using onchange</h2>
+<form name="frmEmployees">
+  <table border="0" width="288">
+    <tr>
+      <td width="80">First Name:</td>
+      <td width="194"><input type="text" name="txtFirstName" size="10"
+		       onChange="form.txtFullName.value = form.txtFirstName.value + ' ' +
+						form.txtLastName.value"></td>
+    </tr>
+    <tr>
+      <td width="80">Last Name:</td>
+      <td width="194"><input type="text" name="txtLastName" size="10"
+                       onChange="form.txtFullName.value = form.txtFirstName.value + ' ' +
+					form.txtLastName.value"></td>
+    </tr>
+    <tr>
+      <td width="80">Full Name:</td>
+      <td width="194"><input type="text" name="txtFullName" size="20"></td>
+    </tr>
+  </table>
+</form>
+<h2>Employment Application using onclick(button)</h2>
+<form name="frmEmployees">
+  <table border="0" width="320">
+    <tr>
+      <td width="80">First Name:</td>
+      <td><input type="text" name="txtFirstName" size="10"></td>
+    </tr>
+    <tr>
+      <td width="80">Last Name:</td>
+      <td><input type="text" name="txtLastName" size="10">
+        <input type="button" value="Evaluate" name="btnEvaluate"
+	onClick="form.txtFullName.value = form.txtLastName.value + ', ' + 
+					  form.txtFirstName.value">
+      </td>
+    </tr>
+    <tr>
+      <td width="80">Full Name:</td>
+      <td><input type="text" name="txtFullName" size="24"></td>
+    </tr>
+  </table>
+  <center></center>
+</form>
+<h2>Employment Application using reset function</h2>
+<form name="frmEmployees">
+  <table border="0" width="300">
+    <tr>
+      <td width="80">First Name:</td>
+      <td><input type="text" name="txtFirstName" size="10"></td>
+    </tr>
+    <tr>
+      <td width="80">Last Name:</td>
+      <td><input type="text" name="txtLastName" size="10">
+        <input type="button" value="Evaluate" name="btnEvaluate"
+	onClick="form.txtFullName.value = form.txtLastName.value + ', ' + 
+					  form.txtFirstName.value">
+      </td>
+    </tr>
+    <tr>
+      <td width="80">Full Name:</td>
+      <td><input type="text" name="txtFullName" size="24"></td>
+    </tr>
+    <tr>
+      <td width="80"></td>
+      <td><input type="reset" value="Clear Application" name="btnReset">
+      </td>
+    </tr>
+  </table>
+  <table border="1" width="619" bordercolor="#998765">
+        <tr>
+          <td width="183" valign="top">
+            &nbsp;
+            <table border="0" width="176">
+              <tr>
+
+                <td width="168" colspan="2">Select your T-Shirt size</td>
+              </tr>
+              <tr>
+                <td width="119">Small&nbsp;</td>
+                <td width="49"><input type="radio" name="TShirtSize" ></td>
+              </tr>
+              <tr>
+                <td width="119">Medium</td>
+
+                <td width="49"><input type="radio" name="TShirtSize" ></td>
+              </tr>
+              <tr>
+                <td width="119">Large</td>
+                <td width="49"><input type="radio" name="TShirtSize"></td>
+              </tr>
+              <tr>
+                <td width="119">X-Large</td>
+
+                <td width="49"><input type="radio" name="TShirtSize" checked="true"></td>
+              </tr>
+            </table>
+          </td>
+          <td width="420" valign="top">
+            <pre>&lt;table border=&quot;0&quot; width=&quot;176&quot;&gt;
+
+&nbsp; &lt;tr&gt;
+&nbsp;&nbsp;&nbsp; &lt;td width=&quot;168&quot; colspan=&quot;2&quot;&gt;Select your T-Shirt size&lt;/td&gt;
+&nbsp; &lt;/tr&gt;
+&nbsp; &lt;tr&gt;
+
+&nbsp;&nbsp;&nbsp; &lt;td width=&quot;119&quot;&gt;Small&amp;nbsp;&lt;/td&gt;
+&nbsp;&nbsp;&nbsp; &lt;td width=&quot;49&quot;&gt;&lt;input type=&quot;radio&quot;&gt;&lt;/td&gt;
+&nbsp; &lt;/tr&gt;
+
+&nbsp; &lt;tr&gt;
+&nbsp;&nbsp;&nbsp; &lt;td width=&quot;119&quot;&gt;Medium&lt;/td&gt;
+&nbsp;&nbsp;&nbsp; &lt;td width=&quot;49&quot;&gt;&lt;input type=&quot;radio&quot; checked=&quot;true&quot;&gt;&lt;/td&gt;
+
+&nbsp; &lt;/tr&gt;
+&nbsp; &lt;tr&gt;
+&nbsp;&nbsp;&nbsp; &lt;td width=&quot;119&quot;&gt;Large&lt;/td&gt;
+&nbsp;&nbsp;&nbsp; &lt;td width=&quot;49&quot;&gt;&lt;input type=&quot;radio&quot;&gt;&lt;/td&gt;
+
+&nbsp; &lt;/tr&gt;
+&nbsp; &lt;tr&gt;
+&nbsp;&nbsp;&nbsp; &lt;td width=&quot;119&quot;&gt;X-Large&lt;/td&gt;
+&nbsp;&nbsp;&nbsp; &lt;td width=&quot;49&quot;&gt;&lt;input type=&quot;radio&quot;&gt;&lt;/td&gt;
+
+&nbsp; &lt;/tr&gt;
+&lt;/table&gt;</pre>
+          </td>
+        </tr>
+      </table>
+
+  
+</form>
+</body>
+</html>

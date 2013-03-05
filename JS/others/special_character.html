@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Form Validation</title>
+		<script type="text/javascript">
+			
+			function required_Field()
+			{
+				var name=document.getElementById("name").value;
+				var i;
+				if(name == "")
+			 		alert("Enter the name, don't leave this field blank");
+			 	
+				else 
+				{
+					for(i=0;i<name.length;i++)
+					{
+						if(!((name.charCodeAt(i)>=65 && name.charCodeAt(i)<=90) || (name.charCodeAt(i)>=97 && name.charCodeAt(i)<=122)||(name.charCodeAt(i)>=48 && name.charCodeAt(i)<=57)))
+						{
+						
+						 alert("Input should not contain special character");
+						break;}
+					
+					} 
+					//alert(i);
+					//alert(name.length);
+					//if (!(i==name.length))
+						//{alert("Input should not contain special character");}
+				}		
+						
+			}
+			
+						
+		</script>
+	</head>
+	<body >
+		<center>
+		<h2>special character Validation</h2>
+		<form method="post" name="frm_validation" id="frm_validation">
+			NAME : <input type="text" name="name" id="name" ><br>
+			
+			<input type="submit" name="submit" value ="Accept" onclick="required_Field()">
+			<input type="reset" name="reset" >
+		</form>
+		</center>
+	</body>
+	
+</html>
