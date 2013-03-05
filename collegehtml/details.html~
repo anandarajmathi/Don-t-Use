@@ -1,0 +1,15 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+
+<ul>
+        <li><a href="add_employee.htm">Add Employee</a></li>
+        <li><a href="brief_information.htm">Basic Inforamation</a></li>
+        <li><a href="driving_license.htm">Driving License</a></li>
+        <li><a href="family_details.htm">Family Details</a></li>
+      </ul>
+
+</BODY>
+</HTML>
